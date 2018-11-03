@@ -2,10 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Header from "../components/header"
+import Header from '../components/header'
+import background from '../images/backgrounds/sunset.jpeg'
+
+import './index.scss'
+
+console.log({background});
 
 const IndexPage = () => (
-  <Layout>
+  <Layout style={{
+    background: URL({background})
+  }}>
       <Link to="/contact/">Contact</Link>
     <Header headerText="Hello Gatsby!" />
     <p>What a world.</p>

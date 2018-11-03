@@ -1,0 +1,16 @@
+
+> node-sass@4.9.4 install /Users/unhoodwinked/developer-site/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/unhoodwinked/.npm/node-sass/4.9.4/darwin-x64-64_binding.node
+
+> node-sass@4.9.4 postinstall /Users/unhoodwinked/developer-site/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/unhoodwinked/developer-site/node_modules/node-sass/vendor/darwin-x64-64/binding.node
+Testing binary
+Binary is fine
++ node-sass@4.9.4
+added 45 packages from 52 contributors and audited 30613 packages in 40.796s
+found 5 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
