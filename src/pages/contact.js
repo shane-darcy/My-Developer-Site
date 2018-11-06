@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from "../components/header"
+import Header from "../components/layout"
 
 export default () => (
   <div style={{ color: `teal` }}>
