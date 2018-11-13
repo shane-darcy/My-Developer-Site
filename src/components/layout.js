@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import './nav.scss'
+import "../styles/main.scss"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -12,8 +12,8 @@ const ListLink = props => (
 export default ({ children }) => (
   <div>
     <header className="header">
-        <Link to="/" className="header__links" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>Darcy Development</h3>
+        <Link to="/" className="header__links">
+          <h3 style={{ display: `inline` }}>[logo goes here]</h3>
         </Link>
         <ul style={{ listStyle: `none`, float: `right` }}>
           <ListLink  to="/">Home</ListLink>

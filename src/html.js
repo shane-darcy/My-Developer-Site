@@ -5,6 +5,8 @@ import { TypographyStyle, GoogleFont } from 'react-typography'
 // where you define your theme.
 import typography from './utils/typography'
 
+import BodyStyle from "./components/nav.scss"
+
 export default class HTML extends React.Component {
   render() {
     return (
@@ -20,7 +22,7 @@ export default class HTML extends React.Component {
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body className={BodyStyle} {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}

@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Header from '../components/header'
+import Title from '../components/title'
 
 import './index.scss'
 
 const IndexPage = () => (
 <Layout className="home__background">
     <Link to="/contact/">Contact</Link>
-    <Header />
+    <Title />
         <div className="home__text-container">
             <p className="home__text">websites that tell your story</p>
             <p className="home__text">driven impressions in the digital age</p>
