@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: ['src/styles']
+        includePaths: [`src/assets/partials/`]
       }
     },
     {
@@ -61,8 +61,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Titillium Web`, `sans-serif`,
-          `Cinzel`, `serif`
+          `Titillium Web`, `sans-serif`
         ]
       }
     },

@@ -17,7 +17,7 @@ export default () => (
       }
     `}
     render={data => (
-        <h1 className="">{data.site.siteMetadata.title}</h1>
+        <h1 className="title">{data.site.siteMetadata.title}</h1>
     )}
   />
 )
