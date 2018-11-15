@@ -1,4 +1,28 @@
 .header {
+    background:linear-gradient(90deg, rgba(#072e11, 1) 0, rgba(#072e11, .7) 50%, rgba(#072e11, 1) 100%);
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    padding: 10px 0;
+    position: fixed;
     text-shadow: 1px 1px 1px 1px white;
+    width: 100%;
+
+    &__items {
+        text-decoration: none;
+    } //.header__items
+
+    &__links {
+        color: white;
+        font-size: 16px;
+    } //.header__links
+
+    &__list-container {
+        display: flex;
+        float: right;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 25%;
+    } //.header__list-container
+
 } //.header

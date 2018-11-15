@@ -1,9 +1,42 @@
 .title {
-    bottom: 12%;
-    color: white;
-    font-family: 'Titillium Web', 'serif';
-    font-size: 56px;
+    bottom: 20%;
     left: 10%;
-    margin: 0 auto;
     position: absolute;
+
+    &__main {
+        color: white;
+        font-family: 'Titillium Web', 'serif';
+        font-size: 56px;
+        margin: 0 auto;
+    } //.title__main
+
+    &__sub-title {
+        color: white;
+        font-family: 'Titillium Web', 'serif';
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0 5px;
+        position: relative;
+        text-align: center;
+
+        &::before,
+        &::after {
+            border: 1px solid white;
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 25%;
+        }  //.title__sub-title::before,
+           //.title__sub-title::after
+
+        &::before {
+            right: 5px;
+        } //.title__sub-title::before
+
+        &::after {
+            left: 5px;
+        } //.title__sub-title::after
+
+    } //.title__sub-title
+
 } //.title

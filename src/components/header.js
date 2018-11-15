@@ -12,9 +12,7 @@ const ListLink = props => (
 export default ({ children }) => (
   <div>
     <header className="header">
-        <Link to="/" className="header__links">
-          <h3 style={{ display: `inline` }}>[logo goes here]</h3>
-        </Link>
+        <Link to="/" className="header__links">[logo goes here]</Link>
         <ul className="header__list-container">
           <ListLink  to="/">Home</ListLink>
           <ListLink  to="/about/">About</ListLink>

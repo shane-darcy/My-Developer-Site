@@ -8,9 +8,9 @@ import "../styles/main.scss"
 
 const IndexPage = () => (
  
-<Layout className="home__background">
+<Layout>
     <Header />
-    <Link to="/contact/">Contact</Link>
+    <div className="home__background"></div>
     <Title />
         <div className="home__text-container">
             <p className="home__text">websites that tell your story<i class="far fa-book-open"></i></p>
