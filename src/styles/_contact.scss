@@ -1,0 +1,12 @@
+.contact-component {
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    &:hover {
+        background: rgba($color-green, .7);
+    } //.contact-component:hover
+
+} //.contact-component

@@ -20,16 +20,23 @@ body {
         z-index: -1;
     } //.home__background
 
-    &__text-container {
-        background-color:#215930;
-        border-radius: 5px;
-        bottom: 60%;
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        bottom: 40%;
         left: 50%;
         margin: 0 auto;
         min-width: 320px;
-        position: absolute;
         transform: translateX(-50%);
-        width: 30%;
+        position: absolute;
+    } //.home__content-container
+
+    &__text-container {
+        background-color:#215930;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        width: 100%;
     }  //.home__text-container   
 
     &__text {
