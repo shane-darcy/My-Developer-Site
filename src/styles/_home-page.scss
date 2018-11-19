@@ -1,42 +1,37 @@
-html,
-body {
-    margin: 0;
-} //html,
-  //body
-
 .home {
-
-    &__background {
-        background:linear-gradient(to bottom, rgba(69,72,77,0) 0%, rgba(69,72,77,0) 20%, rgba(0,0,0,.97) 100%),
-        url('/backgrounds/chess.jpeg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: blur(3px);
-        height: 85vh;
-        margin: 0 auto;
-        max-width: 1400px;
-        position: relative;
-        z-index: -1;
-    } //.home__background
 
     &__content-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        bottom: 40%;
-        left: 50%;
         margin: 0 auto;
-        min-width: 320px;
-        transform: translateX(-50%);
-        position: absolute;
-    } //.home__content-container
+        max-width: 1400px;
+
+        &::before {
+            background:linear-gradient(to bottom, rgba(69,72,77,0) 0%, rgba(69,72,77,0) 20%, rgba(0,0,0,.97) 100%),
+            url('/backgrounds/chess.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            content: "";
+            filter: blur(3px);
+            height: 650px;
+            left: -5%;
+            position: fixed;
+            right: 0;
+            top: -5%;
+            width: 110%;
+            z-index: -1;          
+        } //.home__background::before
+
+    } //.home__background
 
     &__text-container {
         background-color:#215930;
         border-radius: 5px;
-        margin-bottom: 50px;
-        width: 100%;
+        box-shadow: 0px 5px 53px 15px rgba(#0f0f0f,1);
+        margin: 200px auto 50px;
+        padding: 20px;
     }  //.home__text-container   
 
     &__text {
@@ -46,6 +41,12 @@ body {
         line-height: 1.5;
         text-align: center;
     } //.home__text
+
+    &__title-container {
+        display: flex;
+        justify-content: space-around;
+        order: 2;
+    } //.home__title-container
 
 } //.home
 

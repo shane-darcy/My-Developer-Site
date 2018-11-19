@@ -1,13 +1,13 @@
 .title {
-    bottom: 20%;
-    left: 10%;
-    position: absolute;
+    margin-left: 100px;
+    width: 44%;
 
     &__main {
         color: white;
         font-family: 'Titillium Web', 'serif';
         font-size: 56px;
         margin: 0 auto;
+        text-align: center;
     } //.title__main
 
     &__sub-title {
