@@ -8,6 +8,7 @@
         font-size: 56px;
         margin: 0 auto;
         text-align: center;
+        width: 600px;
     } //.title__main
 
     &__sub-title {
@@ -18,6 +19,7 @@
         padding: 0 5px;
         position: relative;
         text-align: center;
+        width: 600px;
 
         &::before,
         &::after {
@@ -25,7 +27,7 @@
             content: '';
             position: absolute;
             top: 50%;
-            width: 25%;
+            width: 150px;
         }  //.title__sub-title::before,
            //.title__sub-title::after
 
