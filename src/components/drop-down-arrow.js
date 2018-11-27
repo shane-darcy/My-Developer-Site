@@ -7,7 +7,7 @@ class DropDownArrow extends Component {
   render() {
     return (
         <button className="drop-down" onClick={this.props.businessClick}>
-          <img className="drop-down__arrow" src={dropDown} alt="drop down arrow"/>
+          <img className={this.props.showComponent ? 'drop-down__arrow is-active': 'drop-down__arrow'} src={dropDown} alt="drop down arrow"/>
           <span className="drop-down__hidden-text">click to learn more about Shane Darcy</span>
         </button>
     )

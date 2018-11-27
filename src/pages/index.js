@@ -23,16 +23,20 @@ const styles = {
 class IndexPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {showComponent: false};
+        this.state = {
+            showComponent: true
+        };
         this.handleBusinessClick = this.handleBusinessClick.bind(this);
         this.scrollToTop = this.scrollToTop.bind(this);
     }
   
     // Handles Business Click State
     handleBusinessClick() {
+        console.log(this)
         this.setState(prevState => ({
             showComponent: !prevState.showComponent
         }));
+
     }
 
     //Handles the Scroll 
@@ -65,10 +69,12 @@ class IndexPage extends Component {
                             <Title />
                             <DropDownArrow 
                                 style={{margin: `0 auto`}} 
-                                businessClick={this.handleBusinessClick}
+                                businessClick={this.handleBusinessClick}  
+                                showComponent={this.state.showComponent}
                             />
                         </div>
-                        {
+                        { 
+                            //This if function 
                             this.state.showComponent ?
                                 <div>
                                     <div className="home__text-container">
