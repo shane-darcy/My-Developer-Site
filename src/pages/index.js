@@ -7,6 +7,7 @@ import ContactMe from '../components/contact-me'
 import DropDownArrow from '../components/drop-down-arrow'
 import Business from '../components/business'
 import Scroll from 'react-scroll'
+import Social from '../components/social'
 
 import "../styles/main.scss"
 
@@ -63,6 +64,9 @@ class IndexPage extends Component {
         return (
             <Layout>
                 <div>
+                    <aside>
+                        <Social />
+                    </aside>
                     <Header />
                     <div className="home__content-container">
                         <div className="home__title-container">

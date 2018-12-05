@@ -1,0 +1,29 @@
+.social {
+
+    &__container {
+        background-color: black;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-top: 33vh;
+        width: 100px;
+    } //.social__container
+
+    &__icon {
+        background-color: black;
+        border-bottom: 2px solid rgba(white, .9);
+        margin: 0;
+        padding: 10px;
+        width: 70px;
+    } //.social__icon
+
+    &__icon--no-border {
+        border-bottom: none;
+    } //.social__icon--no-border
+
+    &__link {
+        margin: 0 auto;
+    } //.social__link
+
+} //.social
