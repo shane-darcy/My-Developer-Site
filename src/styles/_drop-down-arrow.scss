@@ -14,10 +14,11 @@
     &__arrow {
         height: 15px;
         margin: 12px auto 0;
-        transition: transform 1000ms ease;
+        transform: rotate(180deg);
+        transition: transform 750ms ease;
 
         &.is-active {
-            transform: rotate(180deg);
+            transform: rotate(0deg);
         } //.drop-down__arrow.is-active
 
     } //.drop-down__arrow

@@ -10,15 +10,12 @@ const ListLink = props => (
 )
 
 export default ({ children }) => (
-  <div>
-    <header className="header">
-        <Link to="/" className="header__links">[logo goes here]</Link>
-        <ul className="header__list-container">
-          <ListLink  to="/">Home</ListLink>
-          <ListLink  to="/about/">About</ListLink>
-          <ListLink  to="/contact/">Contact</ListLink>
-        </ul>
-      </header>
-    {children}
-  </div>
+<header className="header">
+    <Link to="/" className="header__links">[logo goes here]</Link>
+    <ul className="header__list-container">
+      <ListLink  to="/">Home</ListLink>
+      <ListLink  to="/about/">About</ListLink>
+      <ListLink  to="/contact/">Contact</ListLink>
+    </ul>
+  </header>
 )

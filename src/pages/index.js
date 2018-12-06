@@ -37,7 +37,6 @@ class IndexPage extends Component {
         this.setState(prevState => ({
             showComponent: !prevState.showComponent
         }));
-
     }
 
     //Handles the Scroll 
@@ -63,34 +62,76 @@ class IndexPage extends Component {
     render() {
         return (
             <Layout>
-                <div>
+                <Header />
+                <div className="home">
                     <aside>
                         <Social />
                     </aside>
-                    <Header />
                     <div className="home__content-container">
                         <div className="home__title-container">
                             <Title />
-                            <DropDownArrow 
-                                style={{margin: `0 auto`}} 
-                                businessClick={this.handleBusinessClick}  
-                                showComponent={this.state.showComponent}
-                            />
                         </div>
-                        { 
-                            //This if function 
-                            this.state.showComponent ?
-                                <div>
-                                    <div className="home__text-container">
-                                        <p className="home__text">i build professional websites for small to medium size businesses</p>
-                                        <p className="home__text">driven impressions in the digital age</p>
-                                        <p className="home__text">position your brand above</p>
-                                    </div>
-                                    <Link to="/contact/"><ContactMe /></Link>
-                                </div>
-                            :
+                            <Link to="/contact/"><ContactMe /></Link>
+                    </div>
+                    <div>
+                        <ScrollLink
+                            activeClass="active"
+                            to="firstInsideContainer"
+                            spy={true}
+                            smooth={true}
+                            duration={1500}
+                            containerId="containerElement"
+                            className="scroll__link"
+                            style={{ display: "inline-block", margin: "20px" }}
+                        >
+                        <DropDownArrow 
+                            businessClick={this.handleBusinessClick}  
+                            showComponent={this.state.showComponent}
+                        />
+                        </ScrollLink>
+                        <ScrollLink
+                            activeClass="active"
+                            to="secondInsideContainer"
+                            spy={true}
+                            smooth={true}
+                            duration={1500}
+                            containerId="containerElement"
+                            className="scroll__link"
+                            style={{ display: "inline-block", margin: "20px" }}
+                        >
+                        <DropDownArrow 
+                            businessClick={this.handleBusinessClick}  
+                            showComponent={!this.state.showComponent}
+                        />
+                        </ScrollLink>
+                        <Element
+                            name="test7"
+                            className="scroll__element"
+                            id="containerElement"
+                            style={{
+                                position: "relative",
+                                height: "400px",
+                                overflow: "scroll",
+                                marginBottom: "100px"
+                            }}
+                        >
+                        <Element
+                            name="firstInsideContainer"
+                            style={{
+                            marginBottom: "200px"
+                            }}
+                        >
+                            first element inside container
+                        </Element>
+                        <Element
+                            name="secondInsideContainer"
+                            style={{
+                            marginBottom: "200px"
+                            }}
+                        >
                             <Business />
-                        }
+                        </Element>
+                        </Element>
                     </div>
                 </div>
                 <div>
@@ -121,60 +162,6 @@ class IndexPage extends Component {
                     <div id="anchor" className="scroll__element">
                     test 6 (anchor)
                     </div>
-                    <ScrollLink
-                        activeClass="active"
-                        to="firstInsideContainer"
-                        spy={true}
-                        smooth={true}
-                        duration={1500}
-                        containerId="containerElement"
-                        className="scroll__link"
-                        style={{ display: "inline-block", margin: "20px" }}
-                    >
-                    Go to first element inside container
-                    </ScrollLink>
-                    <ScrollLink
-                        activeClass="active"
-                        to="secondInsideContainer"
-                        spy={true}
-                        smooth={true}
-                        duration={1500}
-                        containerId="containerElement"
-                        className="scroll__link"
-                        style={{ display: "inline-block", margin: "20px" }}
-                    >
-                    Go to second element inside container
-                    </ScrollLink>
-                    <Element
-                        name="test7"
-                        className="scroll__element"
-                        id="containerElement"
-                        style={{
-                            position: "relative",
-                            height: "200px",
-                            overflow: "scroll",
-                            marginBottom: "100px"
-                        }}
-                    >
-                    test 7 (duration and container)
-                    <Element
-                        name="firstInsideContainer"
-                        style={{
-                        marginBottom: "200px"
-                        }}
-                    >
-                        first element inside container
-                    </Element>
-                    <Element
-                        name="secondInsideContainer"
-                        style={{
-                        marginBottom: "200px"
-                        }}
-                    >
-                        second element inside container
-                    </Element>
-                    </Element>
-
                     <Element id="same" className="scroll__element">
                     Two links point to this
                     </Element>

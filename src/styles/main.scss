@@ -1,13 +1,19 @@
 @import 'normalize';
 
+// Base Styles
 @import '~tachyons-sass/tachyons.scss';
 @import 'base';
 @import 'variables';
+@import 'helpers';
+
+// Component Styles
 @import 'header';
 @import 'title';
 @import 'contact';
 @import 'drop-down-arrow';
 @import 'scroll';
 @import 'social';
+@import 'business';
 
+// Page Styles
 @import 'home-page';
