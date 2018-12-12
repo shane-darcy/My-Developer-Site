@@ -16,7 +16,7 @@
         font-family: 'Titillium Web', 'serif';
         font-size: 20px;
         font-weight: 300;
-        padding: 0 7px;
+        padding: 3px 7px;
         position: relative;
         text-align: center;
         width: 600px;
@@ -32,11 +32,11 @@
            //.title__sub-title::after
 
         &::before {
-            right: 3px;
+            right: 0;
         } //.title__sub-title::before
 
         &::after {
-            left: 3px;
+            left: 0;
         } //.title__sub-title::after
 
     } //.title__sub-title

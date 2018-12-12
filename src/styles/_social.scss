@@ -1,14 +1,14 @@
 .social {
-
-    &__container {
-        background-color: black;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        float: right;
-        margin-top: 30vh;
-        width: 100px;
-    } //.social__container
+    background-color: black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 100px;
+    z-index: -1;
 
     &__icon {
         background-color: black;

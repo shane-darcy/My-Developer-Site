@@ -9,7 +9,7 @@ import "../styles/main.scss"
 class Social extends Component {
   render() {
     return (
-      <div className="social__container">
+      <aside className="social">
         <a className="social__link" href="https://www.facebook.com/shane.darcy.94">
             <img className="social__icon" src={facebook} alt="Facebook icon" />
         </a>
@@ -22,7 +22,7 @@ class Social extends Component {
         <a className="social__link" href="https://teamtreehouse.com/shanedarcy">
             <img className="social__icon  social__icon--no-border" src={treehouse} alt="Treehouse icon" />
         </a>
-      </div>
+      </aside>
     )
   }
 }

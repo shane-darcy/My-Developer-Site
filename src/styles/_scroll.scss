@@ -1,7 +1,16 @@
 .scroll {
+    margin: 0 auto;
+    width: 80%;
+
+    &__button-container {
+        display: flex;
+        justify-content: center;
+    }
 
     &__element {
         color: $color-white;
+        text-align: center;
+        margin: 0 auto;
     } //.scroll__element
     
     &__link {

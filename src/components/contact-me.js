@@ -5,8 +5,8 @@ import "../styles/main.scss"
 class ContactMe extends Component {
   render() {
     return (
-      <div style={{margin: `0 auto`}}>
-        <button className="contact-component">Contact Me</button>
+      <div>
+        <button className="contact__button">Contact Me</button>
       </div>
     )
   }

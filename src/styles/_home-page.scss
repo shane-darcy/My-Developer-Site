@@ -27,28 +27,14 @@
         padding: 200px 0;
     } //.home__background
 
-    &__text {
-        color: white;
-        font-family: 'Titillium Web', 'serif';
-        font-size: 24px;
-        line-height: 1.5;
-        text-align: center;
-    } //.home__text
-
-    &__text-container {
-        background-color:$color-green;
-        border: 3px $color-white inset;
-        border-radius: 5px;
-        box-shadow: 0px 5px 53px 15px rgba(#0f0f0f,1);
-        margin: 100px auto 50px;
-        padding: 20px;
-        width: 40%;
-    }  //.home__text-container   
+    &__scroll-container {
+        margin: 0 auto;
+    } //.home__scroll-container 
 
     &__title-container {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
-        // order: 2;
     } //.home__title-container
 
 } //.home
